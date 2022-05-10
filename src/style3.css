@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: fill;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px;
+    padding: 0;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:  white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.welcomeline{
+    color: yellowgreen;
+    text-align: center;
+}
+
+form{
+    width:340px;
+    height:430px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin-left: 39%;
+    padding:20px 30px;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+}
+
+input:focus{
+    border-bottom:2px solid #78788c;
+}
+
+.btn{
+    width: 70%;
+    margin-left: 45px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    border-radius: 20px;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+
+.btn:hover{
+    background:#6767ee;
+    color:#fff;
+}
+
+table{
+    width: 40%;
+    height: 70px;
+    text-align: center;
+    border: black solid;
+    position: relative;
+    border-collapse: collapse;
+    margin-left: 30%;
+}
+
+th,td{
+    padding: 15px;
+}
+
+th{
+    background-color: rgb(75, 132, 218);
+    color: black   
+}
+
+tr{
+    background-color: gray;
+}
+
+.chart-container{
+    width: 450px;
+    height: auto;
+    margin-left: 35%;
+    position: relative;
+    background-color: whitesmoke;
+}
